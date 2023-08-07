@@ -3,7 +3,7 @@ const express = require("express");
 // Initialize Express
 const app = express();
 // Create GET request
-app.get("/createkeypair/:KEY", (req, res) => {
+app.get("/createkeypair/", (req, res) => {
 
   // Generate key pair
   var { privateKey, publicKey } = crypto.generateKeyPairSync('rsa', {
